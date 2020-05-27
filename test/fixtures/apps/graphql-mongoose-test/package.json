@@ -1,0 +1,7 @@
+{
+  "name": "graphql-mongoose-test",
+  "version": "0.0.1",
+  "dependencies": {
+    "egg-mongoose": "^3.2.0"
+  }
+}

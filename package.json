@@ -1,0 +1,64 @@
+{
+  "name": "egg-graphql-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "eggPlugin": {
+    "name": "graphqlMongoose",
+    "optDependencies": [
+      "egg-mongoose"
+    ]
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "apollo-server-koa": "^2.13.1",
+    "egg-mongoose": "^3.2.0",
+    "graphql": "^15.0.0",
+    "graphql-compose": "^7.16.1",
+    "graphql-compose-mongoose": "^7.3.8",
+    "mongoose": "^5.9.15"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.16.1",
+    "egg-bin": "^4.14.1",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app",
+    "config",
+    "app.js"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-graphql-mongoose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-graphql-mongoose#readme",
+  "author": "ls",
+  "license": "MIT"
+}
