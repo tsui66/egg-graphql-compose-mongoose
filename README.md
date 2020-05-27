@@ -1,7 +1,7 @@
 # egg-graphql-mongoose
 
 [![NPM version][npm-image]][npm-url]
-[![build status][action-image]][travis-url]
+[![build status][action-image]][action-url]
 [![Test coverage][codecov-image]][codecov-url]
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
@@ -11,7 +11,7 @@
 [npm-image]: https://img.shields.io/npm/v/egg-graphql-mongoose.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-graphql-mongoose
 [action-image]: https://github.com/Quinton/egg-graphql-mongoose/workflows/build/badge.svg
-[travis-url]: https://travis-ci.org/Quinton/egg-graphql-mongoose
+[action-url]: https://github.com/Quinton/egg-graphql-mongoose/actions
 [codecov-image]: https://codecov.io/gh/Quinton/egg-graphql-mongoose/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/Quinton/egg-graphql-mongoose
 [david-image]: https://img.shields.io/david/Quinton/egg-graphql-mongoose.svg?style=flat-square
