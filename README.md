@@ -63,7 +63,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 
-<!-- example here -->
+[egg-graphql-mongoose-example](https://github.com/Quinton/egg-graphql-mongoose-example)
 
 ## Questions & Suggestions
 
