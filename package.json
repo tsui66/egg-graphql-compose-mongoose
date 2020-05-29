@@ -1,11 +1,11 @@
 {
   "name": "egg-graphql-mongoose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "eggPlugin": {
     "name": "graphqlMongoose",
-    "optDependencies": [
-      "egg-mongoose"
+    "dependencies": [
+      "mongoose"
     ]
   },
   "keywords": [
