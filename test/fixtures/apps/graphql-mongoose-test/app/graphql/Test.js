@@ -1,9 +1,8 @@
 'use strict';
 
-module.exports = (app, { composeWithMongoose, GraphqlCompose }) => {
+module.exports = ({ app }, { GraphqlCompose }) => {
   const { schemaComposer } = GraphqlCompose;
-  const customizationOptions = {}; // left it empty for simplicity, described below
-  const TestTC = composeWithMongoose(app.model.Test, customizationOptions);
+  const TestTC = app.graphqlTC.TestTC;
   schemaComposer.Query.addFields({
     TestById: TestTC.getResolver('findById'),
     TestByIds: TestTC.getResolver('findByIds'),
