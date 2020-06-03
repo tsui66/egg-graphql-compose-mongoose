@@ -16,9 +16,33 @@ class AppBootHook {
 
   async didLoad() {
     const graphql_schema_dir = path.join(this.app.config.baseDir, 'app/graphql/');
+    this.app.graphqlTC = {};
     for (const file of fs.readdirSync(graphql_schema_dir)) {
       if (file.endsWith('.js')) {
-        this.app.loader.loadFile(path.join(this.app.config.baseDir, `app/graphql/${file}`), this.app, { composeWithMongoose, GraphqlCompose });
+        const baseName = path.basename(`app/graphql/${file}`, '.js');
+        if (!baseName) {
+          this.app.coreLogger.error(`[egg-graphql-mongoose] app/model/${file} not exists`);
+          throw new Error(`[egg-graphql-mongoose] app/model/${file} not exists`);
+        } else {
+          this.app.graphqlTC[`${baseName}TC`] = composeWithMongoose(this.app.model[baseName]);
+        }
+      } else {
+        this.app.coreLogger.warn('[egg-graphql-mongoose] Invalid graphql schema file.');
+      }
+    }
+    for (const file of fs.readdirSync(graphql_schema_dir)) {
+      if (file.endsWith('.js')) {
+        this.app.loader.loadFile(
+          path.join(this.app.config.baseDir, `app/graphql/${file}`),
+          {
+            app: this.app,
+            ctx: this.app.createAnonymousContext(),
+          },
+          {
+            composeWithMongoose,
+            GraphqlCompose,
+          }
+        );
         const graphqlSchema = GraphqlCompose.schemaComposer.buildSchema();
         this.app.graphqlSchema = graphqlSchema;
       } else {
