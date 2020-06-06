@@ -38,8 +38,8 @@ jobs:
       env:
         CI: true
     - name: Code Coverage
-    run: |
-      npm install codecov -g
-      codecov
-    env:
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      run: |
+        npm install codecov -g
+        codecov
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
