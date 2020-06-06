@@ -39,7 +39,7 @@
 
 我们会使用 [graphql-compose-mongoose](https://github.com/graphql-compose/graphql-compose-mongoose) 扩展为插件；配合 eggjs 完成 GraphQL 服务的搭建。 GraphQL Tools 建立了一种 GraphQL-first 的开发哲学，主要体现在以下三个方面：
 
-- Mongoose model 即 GraphQLType， 内置 CRUD resolvers。
+- Mongoose model 即 GraphQLType，内置 CRUD resolvers。
 - 兼容使用官方的 GraphQL schema 进行编程。 GraphQL Tools 提供工具，让你可以书写标准的 GraphQL schema，并完全支持里面的特性。
 - 为很多特殊场景提供标准解决方案。最大限度标准化 GraphQL 应用。
 
