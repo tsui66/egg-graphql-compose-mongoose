@@ -118,8 +118,7 @@ exports.middleware = [ 'graphql-mongoose' ];
 .
 ├── app
 │   ├── graphql
-│   │   ├── User.js
-│   │   │
+│   │   └── User.js
 │   ├── model
 │   │   └── User.js
 │   ├── public
