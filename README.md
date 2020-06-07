@@ -21,7 +21,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-graphql-mongoose.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-graphql-mongoose
 
-[GraphQL](http://facebook.github.io/graphql/)使用 Schema 来描述数据，并通过制定和实现 GraphQL 规范定义了支持 Schema 查询的 DSQL （Domain Specific Query Language，领域特定查询语言，由 FACEBOOK 提出。
+[GraphQL ](http://facebook.github.io/graphql/)使用 Schema 来描述数据，并通过制定和实现 GraphQL 规范定义了支持 Schema 查询的 DSQL （Domain Specific Query Language，领域特定查询语言，由 FACEBOOK 提出。
 
 ![graphql](http://upload-images.jianshu.io/upload_images/551828-8d055caea7562605.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -128,9 +128,9 @@ exports.middleware = [ 'graphql-mongoose' ];
 
 ## 参考文章
 
-- [graphql官网](http://facebook.github.io/graphql)
+- [graphql 官网](http://facebook.github.io/graphql)
 
-- [如何在egg中使用graphql](https://github.com/Quinton/egg-graphql-mongoose-example)
+- [如何在 egg 中使用 graphql](https://github.com/Quinton/egg-graphql-mongoose-example)
 
 - [graphql-compose](https://github.com/nodkz/graphql-compose)
 
