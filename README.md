@@ -110,7 +110,7 @@ exports.middleware = [ 'graphql-mongoose' ];
 
 ## 使用方式
 
-请将 graphql 相关逻辑放到 app/graphql 下，请参考测试用例。
+请将 graphql 相关逻辑放到 app/graphql 下，请参考 [egg-graphql-mongoose-example](https://github.com/Quinton/egg-graphql-mongoose-example)。
 
 目录结构如下
 
