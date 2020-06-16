@@ -17,6 +17,7 @@ module.exports = (_, app) => {
       const server = new ApolloServer({
         schema: app.graphqlSchema,
         context: ({ ctx }) => (ctx),
+        plugins: options.plugins || [],
         playground: graphiql,
         introspection: options.introspection,
       });
