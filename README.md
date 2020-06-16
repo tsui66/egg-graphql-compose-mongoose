@@ -80,6 +80,11 @@ exports.graphql = {
   graphiql: true,
   //是否设置默认的Query和Mutation, 默认关闭
   defaultEmptySchema:true,
+  plugins: [{
+    requestDidStart(requestContext) {
+      requestContext.context.tracer.ctx.logger.info(`${JSON.stringify(requestContext.request.query, null, 2)}`);
+    },
+  }],
   // graphQL 路由前的拦截器
   onPreGraphQL: function* (ctx) {},
   // 开发工具 graphiQL 路由前的拦截器，建议用于做权限操作(如只提供开发者使用)
