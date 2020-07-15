@@ -53,12 +53,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-graphql-mongoose.git"
+    "url": "git+https://github.com/Quinton/egg-graphql-mongoose.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/Quinton/egg-graphql-mongoose/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-graphql-mongoose#readme",
+  "homepage": "https://github.com/Quinton/egg-graphql-mongoose#readme",
   "author": "ls",
   "license": "MIT"
 }
