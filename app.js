@@ -11,6 +11,7 @@ class AppBootHook {
   }
 
   async configWillLoad() {
+    // 保证graphql挂载在第一个
     this.app.config.coreMiddleware.unshift('graphql');
   }
 
