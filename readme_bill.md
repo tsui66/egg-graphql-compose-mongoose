@@ -1,8 +1,25 @@
-## 更新内容
-1. 核心逻辑抽离，优化代码逻辑
-2. 修改 GraphQL 中间件挂载方式
-3. 添加 GraphQL 插件配置内容
+### 简介
+使用 mongodb schema 和 查询方法组装转换为 GraphQL Schema 实现 GraphQL API
 
+### 使用
+配置 config/config.default.js , 添加中间件 graphql 
+```js
+config.middleware = [ 'graphql' ];
 
-## 暂未支持
-1. directive 指令
+config.graphql = {
+  router: '/graphql',
+  graphiql: true,
+};
+```
+
+添加插件
+```js
+module.exports = {
+  graphql: {
+    enable: true,
+    package: 'egg-graphql-mongoose',
+  },
+};
+```
+
+本插件需要和 mongodb 配合使用，需要在app/model下定义模型，并且在app/graphql下定义对应模型名称的解析器，详细请查看测试代码

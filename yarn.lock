@@ -973,6 +973,11 @@ apollo-server-koa@^2.14.2:
     koa-compose "^4.1.0"
     type-is "^1.6.16"
 
+apollo-server-module-graphiql@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/apollo-server-module-graphiql/-/apollo-server-module-graphiql-1.4.0.tgz#c559efa285578820709f1769bb85d3b3eed3d8ec"
+  integrity sha512-GmkOcb5he2x5gat+TuiTvabnBf1m4jzdecal3XbXBh/Jg+kx4hcvO3TTDFQ9CuTprtzdcVyA11iqG7iOMOt7vA==
+
 apollo-server-plugin-base@^0.9.1:
   version "0.9.1"
   resolved "https://registry.npmjs.org/apollo-server-plugin-base/-/apollo-server-plugin-base-0.9.1.tgz#a62ae9ab4e89790fd4cc5d123bb616da34e8e5fb"
