@@ -2,16 +2,12 @@
 
 exports.keys = '123456';
 
-// exports.mongoose = {
-//   url: 'mongodb://127.0.0.1:27017/test',
-//   options: {
-//     useNewUrlParser: true,
-//     useFindAndModify: false,
-//     useUnifiedTopology: true,
-//   },
-// };
+exports.mongoose = {
+  url: 'mongodb://10.10.0.138/example',
+  options: { useUnifiedTopology: true },
+};
 
-exports.graphqlMongoose = {
+exports.graphql = {
   router: '/graphql',
   // 是否加载到 app 上，默认开启
   app: true,
@@ -27,3 +23,5 @@ exports.graphqlMongoose = {
   // 开发工具 graphiQL 路由前的拦截器，建议用于做权限操作(如只提供开发者使用)
   // * onPreGraphiQL() {},
 };
+
+exports.middleware = [ 'graphql' ];

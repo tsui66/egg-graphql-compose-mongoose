@@ -19,6 +19,7 @@
     "egg-mongoose": "^3.2.0",
     "graphql": "^15.0.0",
     "graphql-compose": "^7.16.1",
+    "graphql-compose-dataloader": "^1.1.2",
     "graphql-compose-mongoose": "^7.3.8"
   },
   "devDependencies": {
@@ -46,7 +47,8 @@
   "files": [
     "app",
     "config",
-    "app.js"
+    "app.js",
+    "lib"
   ],
   "ci": {
     "version": "8, 10"

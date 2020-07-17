@@ -15,14 +15,7 @@ describe('test/graphql-mongoose.test.js', () => {
   after(() => app.close());
   afterEach(mock.restore);
 
-  it('should GET /', () => {
-    return app.httpRequest()
-      .get('/')
-      .expect('hi, graphqlMongoose')
-      .expect(200);
-  });
-
-  it('should get graphiql html response', async () => {
+  it('should get graphql html response', async () => {
     app.mockHttpclient('/graphql', 'GET', {});
     const result = await app.httpRequest()
       .get('/graphql')
