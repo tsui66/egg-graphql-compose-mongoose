@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const GraphqlCompose = require('graphql-compose');
 const { composeWithMongoose } = require('graphql-compose-mongoose');
-const { composeWithDataLoader } = require('graphql-compose-dataloader');
+const { composeWithDataLoader } = require('graphql-compose-dataloader-new');
 
 class AppBootHook {
   constructor(app) {
