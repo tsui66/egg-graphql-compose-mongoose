@@ -1,6 +1,6 @@
 {
   "name": "egg-graphql-mongoose",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "eggPlugin": {
     "name": "graphqlMongoose",
