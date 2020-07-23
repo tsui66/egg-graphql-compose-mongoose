@@ -12,7 +12,7 @@ class AppBootHook {
   }
 
   async configWillLoad() {
-    this.app.config.coreMiddleware.unshift('graphql');
+    // this.app.config.coreMiddleware.unshift('graphql');
   }
 
   async didLoad() {
