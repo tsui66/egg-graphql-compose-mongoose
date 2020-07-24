@@ -33,7 +33,8 @@ class AppBootHook {
           );
         } else {
           this.app.graphqlTC[`${baseName}TC`] = composeWithDataLoader(
-            composeWithMongoose(this.app.model[baseName])
+            composeWithMongoose(this.app.model[baseName]),
+            {}
           );
         }
       } else {

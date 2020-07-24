@@ -1,6 +1,6 @@
 {
   "name": "egg-graphql-mongoose",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "eggPlugin": {
     "name": "graphqlMongoose",
@@ -18,7 +18,7 @@
     "egg-mongoose": "^3.2.0",
     "graphql": "^15.0.0",
     "graphql-compose": "^7.16.1",
-    "graphql-compose-dataloader-new": "^1.0.0",
+    "graphql-compose-dataloader-new": "^1.0.2",
     "graphql-compose-mongoose": "^7.3.8",
     "mongoose": "^5.9.15"
   },
