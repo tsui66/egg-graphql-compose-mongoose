@@ -11,6 +11,8 @@ exports.keys = '123456';
 //   },
 // };
 
+exports.middleware = [ 'graphql' ];
+
 exports.graphqlMongoose = {
   router: '/graphql',
   // 是否加载到 app 上，默认开启
