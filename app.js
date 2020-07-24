@@ -12,7 +12,7 @@ class AppBootHook {
   }
 
   async configWillLoad() {
-    this.app.config.coreMiddleware.unshift('graphql');
+    // this.app.config.coreMiddleware.unshift('graphql');
   }
 
   async didLoad() {
@@ -26,15 +26,17 @@ class AppBootHook {
         const baseName = path.basename(`app/graphql/${file}`, '.js');
         if (!baseName) {
           this.app.coreLogger.error(
-            `[egg-graphql-mongoose] app/model/${file} not exists`
+            `[egg-graphql-mongoose] app/graphql/${file} not exists`
           );
           throw new Error(
-            `[egg-graphql-mongoose] app/model/${file} not exists`
+            `[egg-graphql-mongoose] app/graphql/${file} not exists`
           );
         } else {
           this.app.graphqlTC[`${baseName}TC`] = composeWithDataLoader(
             composeWithMongoose(this.app.model[baseName]),
-            {}
+            {
+              cache: false,
+            }
           );
         }
       } else {
