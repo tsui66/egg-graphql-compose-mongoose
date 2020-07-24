@@ -110,7 +110,7 @@ exports.graphql = {
 };
 
 // 添加中间件拦截请求
-exports.middleware = [ 'graphql-mongoose' ];
+exports.middleware = [ 'graphql' ];
 ```
 
 ## 使用方式
